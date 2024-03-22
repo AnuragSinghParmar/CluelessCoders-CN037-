@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>login</title>
+<style>
+   body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALcAAAETCAMAAABDSmfhAAAA+VBMVEUAAAD/ngD9lAD9mQD+owD9kQD9lgD9mAD+iQD9jQD+oAAEAAAAAQD/ewD9hAD+lQD+SABBAAD/cQD8pQD9WAD+gABLHAH9hgD9dQDtLgD/bQD+ZgCHAAD9ewBYAABwAACaAAD/TwCQAABhAQAXAADKGQAeAQAOAAD1MQBTIQCZRAC/VQLTYAHZXwDLVQC3SwCENgA3EwGiRADoZQDlXAJxLQBmKQErDwA2FgB6NACvTQHybwElCAB9LQDqWwDdJgC8QACzDADfPQDGHwDbJgGiAABhHwEvAQBEAAAoAQDWFgCYKQBeAABrAQB8AACzLACCGQCkHQBNAAC9mEpCAAADVUlEQVR4nO3dbW/aVhiAYbDB2LwY49nFL4BxEgPLRtKsTbutzTw3MAgrrOX//5idQ7Rpm0TSfdiOke4LIb7eOnr82PCFSqWc2qoDgP9Cu1Vpn95wt1uPTqz8kH2Cx105HPYJbsG2pDoCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/1/Try2++nc+vrl/eqE75F26+e9Xx7b7t+4EbzV9OVfd8mellMPT7pmVZpmnbfhC9vlWd9CVezDv2Idqy6vLD9jvu9YXqqme9iTq23be0el3TDN3Q6rI8mL9V3fWMN26nb/q+pRmGrler1YahyXHpzCeqy570/Su/b9XNft3Qm9VqU7z1hgw3/SvVaU+6GpqWGBDN6FZrQvNQLmbGMv1L1W1P+MG1LU1miylpfiXURLcIF2NuvivxJn8d2HKyG2K0m7XaIbxW1eVmqVv2j6rrjrqNO7ZV7xrigmzKMRHHXas2grQztDXNfPdedd8x1668KrWGuCCbYrZrNd3QrSAN08gU3e6d6r4j2j/9edxylTSbel3rx06ezWIx9bb7s+rAI15EvqnJ4dbl6m5WddcLPCfMijwWuzGIP6gOPOI2si2j8dgtyzthPtvk4eJ+4Q1t13Ny1YFH3InubtfodrtiFYoT9hZ5dlZkWe6kcew5s0VJ75l3kS8Wnlh54nkq8GIvzfNicHY2zhzH8VInXJR0odzF8pGq3xfPI0PPcVInz5ejUTIuxIGL9NmipE+Fv8RuMJQ6w0gsvzQNs6S3Gu0Gyzycide96sAj3qax+ygSa8RxwuKs9/B+tV5vx/dZHoZL1YHHfPDiOIoiMdliLFKRff4wWfX2+1EyKLLNZqu675hfU09KZ+Jww/D+7GPv4mK17q0mve24KIqV6r5jbhwx1Km81WRFsdzue+IbcWtyMZ32kmQ3KO1xVyq/OXJARPd4kGzP14f90Zq2JqtRsktKur2lm3AmF96mGG9Ho97kjz80mIpp+bhWWvaMTzMRPsuWg+S895dt3ZpeTMr9K8rnmZAlu93+72NR7urKITwvtsmo9KH/NN5ku/WqpLf0p+wH+4eTO22pNZny1ygAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABl8TuGcFCMDJymdAAAAABJRU5ErkJggg==');
+  background-size:cover;
+  background-position: center;
+  color: #f5f6f7;
+  font-family: Tahoma;
+  font-size: 16px;
+  align-items: center;
+
+}
+
+    header{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    color: #000000;
+}
+
+ header nav a {
+    color: #070707;
+    text-decoration:none;
+    margin: 0 10px;
+    text-align:center;
+}
+    .log {
+        background-color: #a29b9b;
+        padding:10px;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+        width:300px;
+    }
+    .log input[type="text"],
+    .log input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .log input[type="submit"] {
+        background-color: blueviolet;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .log input[type="submit"]:hover {
+        background-color: blueviolet;
+    }
+    p{
+        text-align: end;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Club Management</h1>
+        <nav>
+            <a href="index.html">Home</a>
+    </nav>
+        </header>
+
+<div class="log">
+    <h2>Login</h2>
+    <form action="#">
+        <label for="username">Username/Email:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Login">
+        
+        <p><a href="form.html">New Register</a></p>
+    </form>
+</div>
+
+</body>
+</html>
