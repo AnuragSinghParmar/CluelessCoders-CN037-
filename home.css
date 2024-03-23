@@ -27,7 +27,7 @@ header{
 .main{
     max-width:1200px;
     margin: 30px auto;
-    padding: 0 30px;
+    padding: 100px 300px;
     display: flex;
     justify-content:center;
     grid-gap:20px;
